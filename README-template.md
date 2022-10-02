@@ -50,6 +50,14 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ## My process
 
+- First I will work on the 375px mobile version, I will create the necessary html elements for the form and the images, then I will give it the styles and    when the mobile version is complete I will work on the JS.
+
+## My process - Movile
+
+- I decided to divide this into two sections, one for the cards and one for the form, I used different nested elements because at this moment I imagine that I will solve a few problems with the absolute and relative position.
+
+
+
 ### Built with
 
 - Semantic HTML5 markup
