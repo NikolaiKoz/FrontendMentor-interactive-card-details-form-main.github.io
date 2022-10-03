@@ -3,6 +3,10 @@
    License: none (public domain)
 */
 
+*{
+	box-sizing: border-box;
+}
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -12,8 +16,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -48,5 +52,138 @@ table {
 }
 
 .main__cardAndBackground{
-	background-color: coral;
+	position: relative;
+	margin-bottom: 3.5em;
 }
+
+/* BACKGOUND IMAGE */
+
+.main__cardAndBackground__backgroundContainer__img{
+
+	height: 240px;
+	width: 100%;
+
+}
+
+/* CARDS CONTAINERS IMAGES */
+
+/* CARDS IMAGES */
+
+.main__cardAndBackground__backCard__container__img,
+.main__cardAndBackground__frontCard__container__img{
+	width: 290px;
+}
+
+/* BACK CARD */
+
+.main__cardAndBackground__backCard{
+	position: absolute;
+	top: 2em;
+	right: 5%;
+}
+
+.main__cardAndBackground__backCard__container__cardCodeConfirm{
+	position: absolute;
+	top: 4.6em;
+	right: 2.3em;
+
+}
+
+/* FRONT CARD */
+
+.main__cardAndBackground__frontCard{
+	position: absolute;
+	left: 5%;
+	top: 7.6em;
+
+}
+
+/* FRONT CARD - LOGO */
+
+.main__cardAndBackground__frontCard__containerLogo{
+	position: absolute;
+	top: 1em;
+	left: 1em;
+}
+
+.main__cardAndBackground__frontCard__containerLogo__logo{
+
+	width: 60px;
+}
+
+.main__cardAndBackground__frontCard__data{
+	position: absolute;
+	top: 6em;
+	width: 100%;
+	text-align: center;
+
+}
+
+.main__cardAndBackground__frontCard__data__cardNumber{
+	margin-bottom: 1em;
+}
+
+.example{
+	display: flex;
+	justify-content: space-around;
+}
+
+.main__cardAndBackground__frontCard__data__name,
+.main__cardAndBackground__frontCard__data__date{
+	display: inline;
+}
+
+
+/* FORM */
+
+.main__form{
+	max-width: 95%;
+	margin: 0 auto;
+}
+
+.main__form__formContainer{
+	display: grid;
+	margin: 0 5%;
+	grid-template-rows: repeat(9, 2.5em);
+	grid-template-columns: repeat(4, 1fr);
+	column-gap: .5em;
+}
+
+.maxwhith{
+
+	grid-column: 1 / 5;
+
+}
+
+.textDate{
+	padding-top: 1em;
+	grid-column: 1 / 3;
+
+}
+
+.labelCvc, .inputCvc{
+
+	grid-column: 3 / 5;
+
+}
+
+.inputMm  input,
+.inputYy input,
+.inputCvc input{
+	width: 100%;
+	height: 100%;
+}
+
+.main__form__formContainer > label{
+
+	padding-top: 1em;
+}
+
+.btn{
+	grid-row-start: 8;
+}
+
+
+
+
+

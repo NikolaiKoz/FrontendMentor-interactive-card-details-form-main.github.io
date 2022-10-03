@@ -37,7 +37,7 @@ Users should be able to:
 
 Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
 
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
+Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it.
 
 Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
 
@@ -55,6 +55,13 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ## My process - Movile
 
 - I decided to divide this into two sections, one for the cards and one for the form, I used different nested elements because at this moment I imagine that I will solve a few problems with the absolute and relative position.
+
+- For the form I decided to use grid, since it seemed like a good opportunity to practice it, but due to my lack of experience I lost about 5 hours because I couldn't get the input to be contained by the columns, the input overflowed and I changed the width of the columns , I solved this by placing the inputs inside a p element to contain them, the same logic that I applied with the images in a div container.
+
+-Today I leave the project here, it is 00:32 am and tomorrow I have to work, I still have to apply the styles for the confirm section, although I have some ideas on how to do it, create a class with the property display none and exchange with Javascript this property between the form and the confirm.
+
+-I also need to apply the requested styles for this challenge and I go to sleep praying that the code does not break when doing so.
+
 
 
 
