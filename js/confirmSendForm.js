@@ -12,6 +12,7 @@ btnForm.addEventListener( 'click', () => {
 });
 
 btnSendForm.addEventListener( 'click', () => {
+    location.reload();
     sendForm.classList.toggle('display');
     form.classList.toggle('display');
 });

@@ -11,10 +11,24 @@ text.addEventListener( 'keyup', (event) => {
 
 var cardNumber = document.getElementById('inputCardNumber');
 
+let cardNum = ['1234567895555555'];
+
 cardNumber.addEventListener( 'keyup', (event) => {
+
+
 
     var inputCardNumber = event.path[0].value;
 
         document.querySelector(".main__cardAndBackground__frontCard__data__cardNumber").innerHTML = inputCardNumber;
 
+        // cardNum.push(inputCardNumber);
+
+        var cardresult = cardNum.slice(0, 4);
+
+        console.log(cardNum, cardresult);
+
+
+
 });
+
+console.log("Nueva linea")
