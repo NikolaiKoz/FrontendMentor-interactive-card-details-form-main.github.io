@@ -75,7 +75,7 @@
     </section>
 
     <section class="main__form">
-      <form class="main__form__formContainer">
+      <form id="form" class="main__form__formContainer">
 
           <label for="name" class="maxwhith">
             cardholder name
@@ -86,7 +86,7 @@
             card number
           </label>
 
-          <input type="number" class="maxwhith" name="cardNumber" id="inputCardNumber" placeholder="e.g. 1234 5678 9123 0000">
+          <input type="text" class="maxwhith" name="cardNumber" id="inputCardNumber" placeholder="e.g. 1234 5678 9123 0000">
 
           <p class="textDate">
             exp. date (<label for="mm">mm</label>/<label for="yy">yy</label>
@@ -109,13 +109,13 @@
             <input type="number" name="cvc" id="cvc" placeholder="e.g. 123" class="inputCvc">
           </p>
 
-          <button type="submit" class="maxwhith btn">
+          <button id="btnForm" type="button" class="maxwhith btn">
             Confirm
           </button>
 
       </form>
 
-      <div class="check ">
+      <div id="sendForm" class="check display">
 
         <picture class="check__container">
           <img src="./images/icon-complete.svg" alt="Check image" class="check__container__img">
@@ -129,7 +129,7 @@
           We've added your card details
         </p>
 
-        <button type="submit" class="maxwhith btn">
+        <button id="btnSendForm" type="button" class="maxwhith btn">
           Continue
         </button>
 
@@ -162,5 +162,7 @@
 
   </footer>
 
+  <script src="./js/confirmSendForm.js"></script>
+  <script src="./js/copyString.js"></script>
 </body>
 </html>
