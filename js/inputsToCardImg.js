@@ -19,16 +19,14 @@ cardNumber.addEventListener( 'keyup', (event) => {
 
     var inputCardNumber = event.path[0].value;
 
+    var resul = JSON.parse( "["+ inputCardNumber + "]" );
+
+    console.log(event);
+
+
+
+
+
         document.querySelector(".main__cardAndBackground__frontCard__data__cardNumber").innerHTML = inputCardNumber;
 
-        // cardNum.push(inputCardNumber);
-
-        var cardresult = cardNum.slice(0, 4);
-
-        console.log(cardNum, cardresult);
-
-
-
 });
-
-console.log("Nueva linea")

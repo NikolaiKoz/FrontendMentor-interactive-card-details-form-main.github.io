@@ -46,6 +46,8 @@ section, input, footer, button{
 }
 
 
+
+
 .main__cardAndBackground{
 
 	position: relative;
@@ -123,6 +125,8 @@ section, input, footer, button{
 	margin-bottom: 1em;
 	font-size: 1.2rem;
 	color: var(--light-grayish-violet);
+	text-transform: uppercase
+;
 
 }
 
