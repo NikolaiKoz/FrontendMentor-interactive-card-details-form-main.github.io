@@ -1,32 +1,8 @@
-var text = document.getElementById('name');
-text.addEventListener( 'keyup', (event) => {
+const data = {
+    cardName: /^[ÁÉÍÓÚA-Z][a-záéíóú]+(\s+[ÁÉÍÓÚA-Z]?[a-záéíóú]+)*$/,
+    cardNumber: /^(?:4[0-9]{12}(?:[0-9]{3})?|5[1-5][0-9]{14}|6(?:011|5[0-9][0-9])[0-9]{12}|3[47][0-9]{13}|3(?:0[0-5]|[68][0-9])[0-9]{11}|(?:2131|1800|35d{3})d{11})$/,
+    expMm: /0[1-9]|1[012]/,
+    expYy: /[2-3][0-9]/,
+    cvc: /^[0-9]{1,3}$/
+}
 
-    var inputName = event.path[0].value;
-
-    document.querySelector('.main__cardAndBackground__frontCard__data__name').innerHTML = inputName;
-
-});
-
-//SEPARAR NUMEROS CADA 4 DIGITOS UN ESPACIO
-
-var cardNumber = document.getElementById('inputCardNumber');
-
-let cardNum = ['1234567895555555'];
-
-cardNumber.addEventListener( 'keyup', (event) => {
-
-
-
-    var inputCardNumber = event.path[0].value;
-
-    var resul = JSON.parse( "["+ inputCardNumber + "]" );
-
-    console.log(event);
-
-
-
-
-
-        document.querySelector(".main__cardAndBackground__frontCard__data__cardNumber").innerHTML = inputCardNumber;
-
-});
