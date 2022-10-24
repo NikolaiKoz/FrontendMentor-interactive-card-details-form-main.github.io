@@ -31,7 +31,7 @@
 
       <!-- BACKGROUND -->
 
-      <picture class="main__cardAndBackground__backgroundContainer">
+      <picture class="main__cardAndBackground__backgroundContainer movile">
         <img src="./images/bg-main-mobile.png" alt="Background mobile image"
           class="main__cardAndBackground__backgroundContainer__img">
       </picture>
@@ -84,9 +84,31 @@
 
     </section>
 
-    <section class="main__form">
+    <section class="main__form" >
+
+      <section class="display check" id="sendForm">
+        <div id="sendForm" class="check">
+
+          <picture class="check__container">
+            <img src="./images/icon-complete.svg" alt="Check image" class="check__container__img">
+          </picture>
+
+          <p class="check__thanks">
+            Thank you!
+          </p>
+
+          <p class="check__info">
+            We've added your card details
+          </p>
+
+          <div class="form__group form__group-btn-enviar">
+            <button class="form__btn" id="btnSendForm">Continue</button>
+          </div>
+
+        </div>
+      </section>
       <!-- NAME -->
-      <form action="" class="form" id="form">
+      <form action="" class="form" id="sectionForm">
 
         <div class="form__group" id="form__group">
           <label for="name" class="form__label">cardholder name</label>
@@ -139,7 +161,7 @@
 
 
             <div class="form__group form__group-btn-enviar">
-              <button type="submit" class="form__btn move">Confirm</button>
+              <button class="form__btn move" id="btnForm">Confirm</button>
             </div>
 
 
@@ -147,28 +169,6 @@
 
     </section>
 
-    <section class="checkForm">
-
-      <div id="sendForm" class="check display">
-
-        <picture class="check__container">
-          <img src="./images/icon-complete.svg" alt="Check image" class="check__container__img">
-        </picture>
-
-        <p class="check__thanks">
-          Thank you!
-        </p>
-
-        <p class="check__info">
-          We've added your card details
-        </p>
-
-        <div class="form__group form__group-btn-enviar">
-          <button type="submit" class="form__btn">Continue</button>
-        </div>
-
-      </div>
-    </section>
 
   </main>
 

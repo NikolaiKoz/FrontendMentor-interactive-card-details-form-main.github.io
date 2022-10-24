@@ -79,6 +79,7 @@ section, input, footer, button{
 	position: absolute;
 	top: 2em;
 	right: 5%;
+
 }
 
 .main__cardAndBackground__backCard__container__cardCodeConfirm{
@@ -96,6 +97,7 @@ section, input, footer, button{
 	position: absolute;
 	left: 5%;
 	top: 7.6em;
+
 
 }
 
@@ -143,6 +145,45 @@ section, input, footer, button{
 .main__cardAndBackground__frontCard__data__name,
 .main__cardAndBackground__frontCard__data__date{
 	display: inline;
+}
+
+@media screen and (min-width: 800px) {
+
+	.main{
+		display: flex;
+	}
+
+	.main__cardAndBackground__backgroundContainer__img{
+		height: 900px;
+		max-width: 30em;
+	}
+
+	.main__cardAndBackground__frontCard{
+		top: 10em;
+		left: 15em;
+	}
+
+	.main__cardAndBackground__backCard{
+		top: 21em;
+		left: 20em;
+	}
+
+	.main__form{
+		position: absolute;
+		right: 25%;
+		top: 13%;
+	}
+
+	.check{
+		position: absolute;
+		top: 1.9em;
+		right: 1.3em;
+	}
+
+	.main__cardAndBackground__backCard__container__cardCodeConfirm{
+		left: 21em;
+	}
+
 }
 
 
