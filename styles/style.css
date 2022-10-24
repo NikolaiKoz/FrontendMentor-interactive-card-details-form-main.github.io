@@ -79,6 +79,7 @@ section, input, footer, button{
 	position: absolute;
 	top: 2em;
 	right: 5%;
+
 }
 
 .main__cardAndBackground__backCard__container__cardCodeConfirm{
@@ -96,6 +97,7 @@ section, input, footer, button{
 	position: absolute;
 	left: 5%;
 	top: 7.6em;
+
 
 }
 
@@ -145,122 +147,203 @@ section, input, footer, button{
 	display: inline;
 }
 
+@media screen and (min-width: 800px) {
+
+	.main{
+		display: flex;
+	}
+
+	.main__cardAndBackground__backgroundContainer__img{
+		height: 900px;
+		max-width: 30em;
+	}
+
+	.main__cardAndBackground__frontCard{
+		top: 10em;
+		left: 15em;
+	}
+
+	.main__cardAndBackground__backCard{
+		top: 21em;
+		left: 20em;
+	}
+
+	.main__form{
+		position: absolute;
+		right: 25%;
+		top: 13%;
+	}
+
+	.check{
+		position: absolute;
+		top: 1.9em;
+		right: 1.3em;
+	}
+
+	.main__cardAndBackground__backCard__container__cardCodeConfirm{
+		left: 21em;
+	}
+
+}
+
 
 /* FORM */
 
+.form{
+	padding: 2.5em;
+}
 .main__form{
-	max-width: 95%;
-	margin: 0 auto;
+	margin-top: 2em;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
 }
 
-.main__form__formContainer,
+
+
+.form__input-error{
+	font-size: 10px;
+	color: red;
+	margin: 0 0 0.5em .7em;
+}
+
+.form__label{
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: .5px;
+}
+
+.form__group-input{
+	position: relative;
+}
+
+.form__input{
+	width: 20em;
+	height: 2.5em;
+	border: 1px solid var(--light-grayish-violet);
+	border-radius: 10px;
+
+}
+
+.containerDateAndCvc{
+	position: relative;
+}
+
+.form__inputDate{
+	position: relative;
+	width: 4.8em;
+	height: 2.5em;
+	border: 1px solid var(--light-grayish-violet);
+	border-radius: 10px;
+}
+
+.form__validation-state{
+	color: red;
+	position: absolute;
+	right: .3em;
+	top: .32em;
+}
+
+.yy{
+	position: absolute;
+	left: 5em;
+}
+
+
+
+.form__validation-stateDate{
+	color: red;
+	position: relative;
+	right: 1.4em;
+	top: .32em;
+}
+
+.cancelYy{
+	left: .8em;
+}
+
+.form__group-inputcvc{
+	position: relative;
+	left: 11em;
+	bottom: 4.4em;
+}
+
+.form__inputcvc{
+	transform: translate(-12em, 4.3em);
+	width: 10em;
+	height: 2.5em;
+	border: 1px solid var(--light-grayish-violet);
+	border-radius: 10px;
+}
+
+.form__validation-statecvc{
+	position: absolute;
+	color: red;
+	left: -2.6em;
+	top: 3.2em;
+}
+
+.form__input-error,
+.form__validation-statecvc,
+.cancelYy,
+.form__validation-stateDate,
+.form__validation-state{
+	color: transparent;
+}
+
+/* BUTTONS */
+
+.form__group-btn-enviar{
+	display: flex;
+	justify-content: center;
+}
+
 .check{
-	display: grid;
-	margin: 0 5%;
-	grid-template-rows: repeat(9, 2.5em);
-	grid-template-columns: repeat(4, 1fr);
-	column-gap: .5em;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
 }
 
-.maxwhith{
-
-	grid-column: 1 / 5;
-
+.form__btn{
+	width: 20em;
+	height: 2.5em;
+	background-color: var(--very-dark-violet);
+	color: var(--white);
+	border: none;
+	border-radius: 5px;
 }
 
-.textDate{
-	padding-top: 2em;
-	grid-column: 1 / 3;
-
-}
-
-.labelCvc, .inputCvc{
-
-	grid-column: 3 / 5;
-
-}
-
-.inputMm  input,
-.inputYy input,
-.inputCvc input{
-	width: 100%;
-	height: 100%;
-}
-
-.main__form__formContainer > label{
-
-	padding-top: 2em;
-}
-
-.btn{
-	grid-row-start: 8;
+.move{
+	position: absolute;
+	top: 5em;
 }
 
 /* CHECK */
 
 .check__container{
-	grid-column: 1 / 5;
-	grid-row: 2 / 5;
-	margin: 0 auto;
-}
-
-.check__container__img{
-	width: 80px;
+	margin-bottom: 2em;
 }
 
 .check__thanks{
-	grid-column: 1 / 5;
-	grid-row: 5 / 6;
-	text-align: center;
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin-bottom: .5em;
 }
 
 .check__info{
-	grid-column: 1 / 5;
-	grid-row-start: 6;
-	text-align: center;
-	padding-top: 1em;
-	color: var(--dark-grayish-violet);
+	margin-bottom: 1em;
 }
 
-.btn{
-	background-color: var(--very-dark-violet);
-	color: var(--white);
-	border: none;
-	border-radius: 10px;
-}
-
-.main__form__formContainer > input,
-.main__form__formContainer > p > input
-{
-	border: none;
-	border: 1px solid var(--light-grayish-violet);
-	border-radius: 10px;
-}
-
-.main__form__formContainer > p,
-.main__form__formContainer > label,
-.main__form__formContainer > p > label{
-	text-transform: uppercase;
-	letter-spacing: .1rem;
-	font-size: 10px;
-}
-
-
-input::placeholder{
-
-	padding-left: 1em;
-	opacity: .5;
-
-}
-
-.check__thanks{
-	text-transform: uppercase;
-	font-size: 1.8rem;
+.check__container__img{
+	margin-top: 1em;
+	height: 70px;
 }
 
 .display{
 	display: none;
 }
+
+
 
 /* ATTRIBUTION */
 
