@@ -250,6 +250,58 @@ section, input, footer, button{
 	color: transparent;
 }
 
+/* BUTTONS */
+
+.form__group-btn-enviar{
+	display: flex;
+	justify-content: center;
+}
+
+.check{
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.form__btn{
+	width: 20em;
+	height: 2.5em;
+	background-color: var(--very-dark-violet);
+	color: var(--white);
+	border: none;
+	border-radius: 5px;
+}
+
+.move{
+	position: absolute;
+	top: 5em;
+}
+
+/* CHECK */
+
+.check__container{
+	margin-bottom: 2em;
+}
+
+.check__thanks{
+	font-size: 2rem;
+	text-transform: uppercase;
+	margin-bottom: .5em;
+}
+
+.check__info{
+	margin-bottom: 1em;
+}
+
+.check__container__img{
+	margin-top: 1em;
+	height: 70px;
+}
+
+.display{
+	display: none;
+}
+
 
 
 /* ATTRIBUTION */
