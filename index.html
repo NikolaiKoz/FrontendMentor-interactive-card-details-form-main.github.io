@@ -86,7 +86,7 @@
             card number
           </label>
 
-          <input type="text" class="maxwhith" name="cardNumber" id="inputCardNumber" placeholder="e.g. 1234 5678 9123 0000">
+          <input type="text" class="maxwhith" name="cardNumber" id="inputCardNumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
 
           <p class="textDate">
             exp. date (<label for="mm">mm</label>/<label for="yy">yy</label>
@@ -98,15 +98,15 @@
           </label>
 
           <p class="inputMm">
-            <input type="number" name="mm" id="mm" placeholder="MM">
+            <input type="number" name="mm" id="mm" placeholder="MM" maxlength="2" min="01" max="12">
           </p>
 
           <p class="inputYy">
-            <input type="number" name="yy" id="yy" placeholder="YY">
+            <input type="number" name="yy" id="yy" placeholder="YY" maxlength="2" min="22" max="39">
           </p>
 
           <p class="inputCvc">
-            <input type="number" name="cvc" id="cvc" placeholder="e.g. 123" class="inputCvc">
+            <input type="number" name="cvc" id="cvc" placeholder="e.g. 123" class="inputCvc" maxlength="3" min="000" max="999">
           </p>
 
           <button id="btnForm" type="button" class="maxwhith btn">
