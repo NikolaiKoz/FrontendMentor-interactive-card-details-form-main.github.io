@@ -10,6 +10,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./styles/style.css">
 
@@ -75,43 +76,54 @@
     </section>
 
     <section class="main__form">
-      <form id="form" class="main__form__formContainer">
+      <!-- NAME -->
+      <form action="" class="form" id="form">
 
-          <label for="name" class="maxwhith">
-            cardholder name
-          </label>
-          <input type="text" id="name" name="name" class="maxwhith" placeholder="e.g. Jane Appleseed">
+        <div class="form__group" id="form__group">
+          <label for="name" class="form__label">cardholder name</label>
+          <div class="form__group-input">
+            <input type="text" class="form__input" id="name" name="name" placeholder="e.g. Jane Appleseed">
+            <span class="material-symbols-outlined form__validation-state">cancel</span>
+          </div>
+          <p class="form__input-error">Wrong format</p>
+        </div>
 
-          <label for="cardNumber" class="maxwhith">
-            card number
-          </label>
+              <!-- NUMBER -->
+        <div class="form__group" id="form__group">
+          <label for="cardNumber" class="form__label">Card number</label>
+          <div class="form__group-input">
+            <input type="text" class="form__input" id="cardNumber" name="cardNumber" placeholder="e.g. 1234 5678 9123 0000">
+            <span class="material-symbols-outlined form__validation-state">cancel</span>
+          </div>
+          <p class="form__input-error">Wrong format</p>
+        </div>
 
-          <input type="text" class="maxwhith" name="cardNumber" id="inputCardNumber" placeholder="e.g. 1234 5678 9123 0000" maxlength="19">
+        <div class="containerDateAndCvc">
+                        <!-- MONT AND YEAR -->
+        <p class="form__label">exp. date (mm/yy)</p>
+        <div class="form__group" id="form__group">
+          <label for="mm" class="form__label"></label>
+          <label for="yy" class="form__label"></label>
 
-          <p class="textDate">
-            exp. date (<label for="mm">mm</label>/<label for="yy">yy</label>
-            )
-          </p>
+          <div class="form__group-inputDate">
+            <input type="text" class="form__inputDate" id="mm" name="mm" placeholder="MM">
+            <span class="material-symbols-outlined form__validation-stateDate">cancel</span>
 
-          <label for="cvc" class="labelCvc">
-            cvc
-          </label>
+            <input type="text" class="form__inputDate" id="yy" name="yy" placeholder="YY">
+            <span class="material-symbols-outlined form__validation-stateDate">cancel</span>
+          </div>
 
-          <p class="inputMm">
-            <input type="number" name="mm" id="mm" placeholder="MM" maxlength="2" min="01" max="12">
-          </p>
+          <p class="form__input-error">Wrong format</p>
+        </div>
+        </div>
 
-          <p class="inputYy">
-            <input type="number" name="yy" id="yy" placeholder="YY" maxlength="2" min="22" max="39">
-          </p>
+    <div class="form__group form__group-btn-enviar">
+      <button type="submit" class="form__btn">Confirm</button>
+    </div>
 
-          <p class="inputCvc">
-            <input type="number" name="cvc" id="cvc" placeholder="e.g. 123" class="inputCvc" maxlength="3" min="000" max="999">
-          </p>
 
-          <button id="btnForm" type="button" class="maxwhith btn">
-            Confirm
-          </button>
+
+
 
       </form>
 
@@ -161,7 +173,6 @@
     </div>
 
   </footer>
-
   <script src="./js/confirmSendForm.js"></script>
   <script src="./js/inputsToCardImg.js"></script>
 </body>
