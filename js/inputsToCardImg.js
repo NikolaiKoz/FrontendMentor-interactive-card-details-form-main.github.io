@@ -6,3 +6,5 @@ const data = {
     cvc: /^[0-9]{1,3}$/
 }
 
+const forms = document.getElementById('sectionForm');
+const inputs = document.querySelectorAll('#sectionForm input');
