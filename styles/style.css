@@ -42,6 +42,12 @@ section, input, footer, button{
 
 }
 
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
 :root{
 	--white: hsl(0, 0%, 100%);
 	--light-grayish-violet: hsl(270, 3%, 87%);
@@ -329,6 +335,14 @@ section, input, footer, button{
 	.rigth__section{
 		margin-top: 6rem;
 	}
+}
+
+@media screen and (max-width: 400px) {
+
+	.front__card{
+		left: 1em;
+	}
+
 }
 
 
