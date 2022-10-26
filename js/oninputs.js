@@ -1,0 +1,1 @@
+const naranja = () => alert('Hola rey');
