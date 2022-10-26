@@ -23,7 +23,16 @@
 
 </head>
 
-<body>
+<body id="body">
+
+  <!-- DARK MODE -->
+
+  <div class="dark-mode">
+    <input type="checkbox" class='checkbox' id='checkbox'>
+    <label for="checkbox" class='labelDarkMode'>
+      <div class="ball"></div>
+    </label>
+  </div>
 
   <main>
     <div class="container">
@@ -75,7 +84,7 @@
             >
           </div>
           <div class="grid-2">
-            <label class="label" for="card_number">card number</label>
+            <label class="label ligth" for="card_number">card number</label>
             <input
             class="inputs"
             type="number"
@@ -176,7 +185,7 @@
     </div>
 
   </footer>
-  <script src="./js/oninputs.js"></script>
+  <script src="./js/darkMode.js"></script>
 </body>
 
 </html>

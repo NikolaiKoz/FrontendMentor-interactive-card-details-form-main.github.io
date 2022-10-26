@@ -54,6 +54,62 @@ input[type=number]::-webkit-outer-spin-button {
 	--dark-grayish-violet: hsl(279, 6%, 55%);
 	--very-dark-violet: hsl(278, 68%, 11%);
 	--red: red;
+	--background: #f2eee3;
+	--check: #000;
+	--ball: #f2eee3;
+}
+
+/* DARK MODE */
+
+.dark {
+	background-color: #000;
+}
+
+.ligth{
+	color: var(--white);
+}
+
+.dark-mode {
+	position: absolute;
+	right: 1em;
+	top: 1em;
+	display: flex;
+	width: 80px;
+	height: 30px;
+	justify-content: center;
+	align-items: center;
+	transition: .5s;
+	z-index: 1;
+}
+
+.checkbox:checked+.labelDarkMode .ball {
+	transform: translateX(24px);
+}
+
+.checkbox {
+	opacity: 0;
+	position: absolute;
+}
+
+.labelDarkMode {
+	width: 50px;
+	height: 26px;
+	background: var(--check);
+	border: 1px solid var(--white);
+	border-radius: 50px;
+	padding: 5px;
+	position: relative;
+}
+
+.ball {
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 20px;
+	height: 20px;
+	background: var(--ball);
+	border-radius: 50%;
+	transition: transform 0.2s linear;
 }
 
 .hidden{
@@ -335,6 +391,11 @@ input[type=number]::-webkit-outer-spin-button {
 	.rigth__section{
 		margin-top: 6rem;
 	}
+
+	.dark-mode {
+		top: 15em;
+	}
+
 }
 
 @media screen and (max-width: 400px) {
