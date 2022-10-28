@@ -50,13 +50,13 @@
               alt="logo"
               class="card__logo"
               >
-              <p id="cardNumber" class="card__number">0000 0000 0000 0000</p>
+              <p id="card_number" class="card__number">0000 0000 0000 0000</p>
               <figcaption class="card__info">
-                <span id="name">Jane Appleseed</span>
+                <span id="card_name">Jane Appleseed</span>
                 <span id="date">
-                  <span id="month">00</span>
+                  <span id="card_month">00</span>
                   /
-                  <span id="year">00</span>
+                  <span id="card_year">00</span>
                 </span>
               </figcaption>
             </figure>
@@ -67,7 +67,7 @@
             src="./images/bg-card-back.png"
             alt="back-card"
             >
-            <span id="cvc" class="back__card__cvc">000</span>
+            <span id="card_cvc" class="back__card__cvc">000</span>
           </picture>
         </div>
       </div>
@@ -79,8 +79,7 @@
             class="inputs"
             type="text"
             placeholder="e.g Jane Appleseed"
-            id="card_name"
-            pattern="^[A-ZÑa-zñáéíóúÁÉÍÓÚ'° ]+$"
+            id="cardNameInput"
             required
             >
           </div>
@@ -90,11 +89,10 @@
             class="inputs"
             type="number"
             oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)"
-            minlength="16"
-            maxlength="16"
+            minlength="19"
+            maxlength="19"
             placeholder="e.g 1234 5678 9123 0000"
-            id="card_number"
-            pattern="[/d{4}/s]{3}/d{4}"
+            id="cardNumberInput"
             required
             >
           </div>
@@ -110,7 +108,7 @@
                   oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)"
                   minlength="2"
                   maxlength="2"
-                  id="card_month"
+                  id="cardMonthInput"
                   required
                   >
                 </div>
@@ -122,7 +120,7 @@
                   oninput="if (this.value.length > this.maxLength) this.value = this.value.slice(0, this.maxLength)"
                   minlength="2"
                   maxlength="2"
-                  id="card_year"
+                  id="cardYearInput"
                   required
                   >
                 </div>
@@ -137,14 +135,14 @@
               minlength="3"
               maxlength="3"
               placeholder="e.g. 123"
-              id="cardCvc"
+              id="cardCvcInput"
               required
               >
             </div>
           </div>
           <button id="submit_btn" class="btn" type="submit">Confirm</button>
         </form>
-        <figure class="thank hidden">
+        <figure id="thank" class="thank hidden">
           <img src="./images/icon-complete.svg" alt="complete">
           <figcaption class="thank">
             <span
@@ -157,7 +155,7 @@
             We've added your card details Continue
           </span>
           </figcaption>
-          <button class="btn">Continue</button>
+          <button id="continue_btn" class="btn">Continue</button>
         </figure>
       </div>
     </div>
